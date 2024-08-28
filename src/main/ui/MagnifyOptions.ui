@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1038</width>
-    <height>201</height>
+    <height>231</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -35,7 +35,7 @@
       </sizepolicy>
      </property>
      <property name="alignment">
-      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
      </property>
      <property name="minimum">
       <double>0.000000000000000</double>
@@ -51,10 +51,10 @@
    <item row="5" column="0">
     <spacer name="horizontalSpacer_3">
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
      <property name="sizeType">
-      <enum>QSizePolicy::Maximum</enum>
+      <enum>QSizePolicy::Policy::Maximum</enum>
      </property>
      <property name="sizeHint" stdset="0">
       <size>
@@ -77,7 +77,7 @@
       <number>1000</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
    </item>
@@ -97,7 +97,7 @@
       </sizepolicy>
      </property>
      <property name="alignment">
-      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
      </property>
      <property name="maximum">
       <double>2.000000000000000</double>
@@ -110,7 +110,7 @@
    <item row="4" column="4" colspan="3">
     <widget class="QDoubleSpinBox" name="COWavelengthSpinBox">
      <property name="alignment">
-      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
      </property>
      <property name="maximum">
       <double>100.000000000000000</double>
@@ -140,7 +140,7 @@
       </sizepolicy>
      </property>
      <property name="alignment">
-      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
      </property>
      <property name="maximum">
       <number>200</number>
@@ -153,7 +153,7 @@
       <number>200</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
     </widget>
    </item>
@@ -240,7 +240,7 @@
      <item>
       <spacer name="horizontalSpacer">
        <property name="orientation">
-        <enum>Qt::Horizontal</enum>
+        <enum>Qt::Orientation::Horizontal</enum>
        </property>
        <property name="sizeHint" stdset="0">
         <size>
@@ -261,7 +261,7 @@
       </sizepolicy>
      </property>
      <property name="alignment">
-      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
      </property>
      <property name="maximum">
       <number>100</number>
@@ -274,7 +274,7 @@
       <string>-</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
    </item>
@@ -287,6 +287,9 @@
    </item>
    <item row="0" column="4" colspan="3">
     <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <property name="spacing">
+      <number>7</number>
+     </property>
      <item>
       <widget class="QPushButton" name="resetButton">
        <property name="sizePolicy">
@@ -296,7 +299,7 @@
         </sizepolicy>
        </property>
        <property name="layoutDirection">
-        <enum>Qt::LeftToRight</enum>
+        <enum>Qt::LayoutDirection::LeftToRight</enum>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -327,17 +330,17 @@
       <string/>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
    </item>
    <item row="5" column="8">
     <spacer name="horizontalSpacer_2">
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
      <property name="sizeType">
-      <enum>QSizePolicy::Maximum</enum>
+      <enum>QSizePolicy::Policy::Maximum</enum>
      </property>
      <property name="sizeHint" stdset="0">
       <size>
@@ -360,7 +363,7 @@
       <string/>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
    </item>
@@ -370,7 +373,7 @@
       <number>100</number>
      </property>
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
      <property name="invertedAppearance">
       <bool>false</bool>
@@ -431,7 +434,7 @@
    <item row="1" column="2">
     <spacer name="verticalSpacer">
      <property name="orientation">
-      <enum>Qt::Vertical</enum>
+      <enum>Qt::Orientation::Vertical</enum>
      </property>
      <property name="sizeHint" stdset="0">
       <size>

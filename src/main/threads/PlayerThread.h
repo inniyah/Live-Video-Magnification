@@ -34,6 +34,7 @@
 #include <QDebug>
 #include <QtCore/QTime>
 #include <QtCore/QQueue>
+#include <QElapsedTimer>
 // OpenCV
 #include <opencv2/highgui/highgui.hpp>
 // Local
@@ -102,7 +103,7 @@ private:
         QImage frame;
         QImage originalFrame;
         // processing measurement
-        QTime t;
+        QElapsedTimer t;
         int processingTime;
         int fpsSum;
         int sampleNumber;

@@ -26,13 +26,12 @@
 #define CAPTURETHREAD_H
 
 // Qt
-#include <QtCore/QTime>
+#include <QtCore/QElapsedTimer>
 #include <QtCore/QThread>
 // OpenCV
 #include <opencv2/highgui/highgui.hpp>
 // Local
 #include "main/helper/SharedImageBuffer.h"
-#include "main/other/Config.h"
 #include "main/other/Structures.h"
 
 using namespace cv;
@@ -58,7 +57,7 @@ class CaptureThread : public QThread
         SharedImageBuffer *sharedImageBuffer;
         VideoCapture cap;
         Mat grabbedFrame;
-        QTime t;
+        QElapsedTimer t;
         QMutex doStopMutex;
         QQueue<int> fps;
         struct ThreadStatisticsData statsData;
