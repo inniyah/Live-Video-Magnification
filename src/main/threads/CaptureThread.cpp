@@ -23,6 +23,7 @@
 /************************************************************************************/
 
 #include "main/threads/CaptureThread.h"
+#include "Config.h"
 
 CaptureThread::CaptureThread(SharedImageBuffer *sharedImageBuffer, int deviceNumber,
                              bool dropFrameIfBufferFull, int width, int height, int fpsLimit)

@@ -1,5 +1,5 @@
-QT += core gui
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+QT += core gui widgets
+greaterThan(QT_MAJOR_VERSION, 6): QT += widgets
 
 TARGET = rvm
 TEMPLATE = app
@@ -70,7 +70,7 @@ FORMS += \
     main/ui/VideoView.ui
 
 # Spare me those nasty C++ compiler warnings and pray instead
-#QMAKE_CXXFLAGS += -W2
+QMAKE_CXXFLAGS += -W
 
 # OpenCV Configuration using pkg-config
 unix {

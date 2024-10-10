@@ -27,7 +27,7 @@
 
 // Qt
 #include <QtCore/QThread>
-#include <QtCore/QTime>
+#include <QtCore/QElapsedTimer>
 #include <QtCore/QQueue>
 #include "QDebug"
 // OpenCV
@@ -72,7 +72,7 @@ class ProcessingThread : public QThread
         Mat originalFrame;
         Rect currentROI;
         QImage frame;
-        QTime t;
+        QElapsedTimer t;
         QQueue<int> fps;
         QMutex doStopMutex;
         QMutex processingMutex;
